@@ -16,12 +16,14 @@ with open("./Solar2Grid.json",'r') as read_file:
           else:
             cve_list.append(entry["name"])
 
+'''
 count = 1
 for item in cve_list:
   print("{} : {}".format(count,item))
   count += 1
 '''
+
 for cve in cve_list:
-  print("Creating file for {}".format(cve))
+  print("Creating file for {}...".format(cve))
   create_COAs(cve)
-'''
+print("Done!")
