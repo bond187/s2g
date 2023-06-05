@@ -20,9 +20,6 @@ def acquire_solutions(CVE):
             if item2 == "solutions":
               if r_json[item][i][item2] != "":
                 solutions.append(r_json[item][i][item2])
-                #print("{}: {}".format(count, r_json[item][i][item2]))
-                #print("")
-                #count = count + 1
     return solutions
   except:
     print("Error in retrieving requested CVE solution data.")
